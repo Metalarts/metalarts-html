@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="assets/css/themify-icons.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--Mean Menu-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
     <!-- animate -->
     <link rel="stylesheet" href="assets/css/animate.css">
     <!--Video Popup-->
@@ -55,12 +57,9 @@
         </form>
     </div>
     <!-- // search Popup -->
-
     <!--Sidebar Nav-->
-    <div id="sidebar" class="sidebar-class right">
-        <div class="toggle-btn">
-            <span class="closebtn" title="Close Overlay">×</span>
-        </div>
+    <div id="sidebar" class="sidebar-class">
+        <div class="closebtn toggle-btn" title="Close Overlay">×</div>
         <div class="sidebar-logo-area">
             <!--Logo Area Start-->
             <div class="logo-area">
@@ -69,66 +68,117 @@
                 </a>
             </div>
             <!--// Logo Area End-->
-            <p>We believe brand interaction is key in commu- nication.
-                Real innovations and a positive customer experience are the heart of successful communication.</p>
         </div>
         <!--// Sidebar Logo Area-->
-
-        <div class="sidebar-working-area">
-            <div class="section-title padding-bottom-20">
-                <h4 class="heading-04">Work Hour</h4>
-            </div>
-            <div class="timing-area">
-                <div class="date">Monday to Friday</div>
-                <div class="time">
-                    <span>7:00</span> - <span>21:00</span>
-                </div>
-
-                <div class="date padding-top-20">Saturday</div>
-                <div class="time">
-                    <span>7:00</span> - <span>16:00</span>
-                </div>
-            </div>
-        </div>
-        <!--// Sidebar Working Area-->
-
-        <div class="sidebar-contact-area">
-            <div class="section-title padding-bottom-20">
-                <h4 class="heading-04">Contact</h4>
-            </div>
-            <div class="timing-area">
-                <div class="date">Support:</div>
-                <div class="time">
-                    <span> (012) 800 456 789</span>
-                </div>
-
-                <div class="date padding-top-20">Shoroom:</div>
-                <div class="time">
-                    <span>Lavaca Street, Suite 2000 <br> Austin, TX 24141</span>
-                </div>
-            </div>
-        </div>
-        <!--// Sidebar Contact Area-->
-        <div class="sidebar-social-icon-wrap">
-            <div class="banner__header__follow_us">
-                <div class="text">FOLLOW US</div>
-                <div class="banner__header__icon">
-                    <ul>
-                        <li><a class="icon" href="#" target="_blank"><i
-                                    class="fab fa-facebook-f"></i></a></li>
-                        <li><a class="icon" href="#" target="_blank"><i
-                                    class="fab fa-twitter"></i></a></li>
-                        <li><a class="icon" href="#" target="_blank"><i
-                                    class="fab fa-instagram"></i></a></li>
-                        <li><a class="icon" href="#/about" target="_blank"><i
-                                    class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--// Sidebar Social Icon-->
+        <div class="mobile-menu"></div>
     </div>
     <!--// Sidebar Nav-->
+
+    <div class="location-popup"></div>
+    <div class="location-popup-content">
+        <button type="button" class="location-popup-content_close">
+            <span class="ti-close"></span>
+        </button>
+        <div class="row no-gutters">
+            <div class="location-popup__wrapper">
+                <div id="google-map" class="location-popup__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.1899657893728!2d90.42380431666383!3d23.779746865573756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7499f257eab%3A0xe6b4b9eacea70f4a!2sManama+Tower!5e0!3m2!1sen!2sbd!4v1561542597668!5m2!1sen!2sbd"
+                        style="border:0; width: 100%; height: 100%;" allowfullscreen></iframe>
+                </div>
+                <div class="location-popup__text">
+                    <div class="contact-items">
+                        <h5 class="heading">Showroom</h5>
+                        <div class="contact">
+                            <span class="contact-info">FairView Ave, El Monte <br> California 91732 </span>
+                        </div>
+                    </div>
+                    <div class="main-btn-wrap padding-top-40">
+                        <a href="#" class="main-btn black uppercase">open in map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--location-popup-->
+
+    <div class="message-popup"></div>
+    <div class="message-popup-content">
+        <button type="button" class="message-popup-content_close">
+            <span class="ti-close"></span>
+        </button>
+        <div class="row no-gutters">
+            <div class="message-popup__wrapper">
+                <div class="message-popup__thumb" style="background-image: url(assets/img/modal/01.png);">
+                    <div class="message-popup__text">
+                        <h5 class="heading">You have a quotation for us?</h5>
+                        <div class="contact">
+                            <span class="contact-info">leave your message below <br> or email us at
+                                info@autoshop.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-popup__form">
+                    <form action="index-4.html" class="contact-form">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" cols="10" rows="4" id="message"></textarea>
+                                </div>
+                                <div class="main-btn-wrap">
+                                    <input class="main-btn black" type="submit" value="Send Message">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--message-popup-->
+
+    <div class="contact-popup"></div>
+    <div class="contact-popup-content">
+        <button type="button" class="contact-popup-content_close">
+            <span class="ti-close"></span>
+        </button>
+        <div class="row no-gutters">
+            <div class="contact-popup__wrapper">
+                <div class="contact-popup__thumb" style="background-image: url(assets/img/modal/02.png);"></div>
+                <div class="contact-popup__info__wrap">
+                    <div class="contact-items">
+                        <h5 class="heading">Opening Hour</h5>
+                        <div class="contact">
+                            <span class="contact-info">Monday to Friday </span>
+                            <span class="contact-info">7:00 - 21:00 </span>
+                            <span class="contact-info">Saturday</span>
+                            <span class="contact-info">7:00 - 16:00 </span>
+                        </div>
+                    </div>
+                    <div class="contact-items padding-top-20">
+                        <h5 class="heading">Phone</h5>
+                        <div class="contact">
+                            <span class="contact-info">(+88) 0172 570051 <br> (+88) 0172 570051</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact-popup-->
 
     <!--Open Menu Cart-->
     <div id="menu-cart-open">
@@ -211,726 +261,395 @@
     </div>
     <!--// Open Menu Cart-->
 
-    <div class="location-popup"></div>
-    <div class="location-popup-content">
-        <button type="button" class="location-popup-content_close">
-            <span class="ti-close"></span>
-        </button>
-        <div class="row no-gutters">
-            <div class="location-popup__wrapper">
-                <div id="google-map" class="location-popup__map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.1899657893728!2d90.42380431666383!3d23.779746865573756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7499f257eab%3A0xe6b4b9eacea70f4a!2sManama+Tower!5e0!3m2!1sen!2sbd!4v1561542597668!5m2!1sen!2sbd"
-                        style="border:0; width: 100%; height: 100%;" allowfullscreen></iframe>
-                </div>
-                <div class="location-popup__text">
-                    <div class="contact-items">
-                        <h5 class="heading">Showroom</h5>
-                        <div class="contact">
-                            <span class="contact-info">FairView Ave, El Monte <br> California 91732 </span>
-                        </div>
-                    </div>
-                    <div class="main-btn-wrap padding-top-40">
-                        <a href="#" class="main-btn black uppercase">open in map</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--location-popup-->
-
-    <div class="message-popup"></div>
-    <div class="message-popup-content">
-        <button type="button" class="message-popup-content_close">
-            <span class="ti-close"></span>
-        </button>
-        <div class="row no-gutters">
-            <div class="message-popup__wrapper">
-                <div class="message-popup__thumb" style="background-image: url(assets/img/modal/01.png);">
-                    <div class="message-popup__text">
-                        <h5 class="heading">You have a quotation for us?</h5>
-                        <div class="contact">
-                            <span class="contact-info">leave your message below <br> or email us at
-                                info@autoshop.com</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="message-popup__form">
-                    <form action="index.html" class="contact-form">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" class="form-control" id="subject">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea class="form-control" cols="10" rows="4" id="message"></textarea>
-                                </div>
-                                <div class="main-btn-wrap">
-                                    <input class="main-btn black" type="submit" value="Send Message">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--message-popup-->
-
-    <div class="contact-popup"></div>
-    <div class="contact-popup-content">
-        <button type="button" class="contact-popup-content_close">
-            <span class="ti-close"></span>
-        </button>
-        <div class="row no-gutters">
-            <div class="contact-popup__wrapper">
-                <div class="contact-popup__thumb" style="background-image: url(assets/img/modal/02.png);"></div>
-                <div class="contact-popup__info__wrap">
-                    <div class="contact-items">
-                        <h5 class="heading">Opening Hour</h5>
-                        <div class="contact">
-                            <span class="contact-info">Monday to Friday </span>
-                            <span class="contact-info">7:00 - 21:00 </span>
-                            <span class="contact-info">Saturday</span>
-                            <span class="contact-info">7:00 - 16:00 </span>
-                        </div>
-                    </div>
-                    <div class="contact-items padding-top-20">
-                        <h5 class="heading">Phone</h5>
-                        <div class="contact">
-                            <span class="contact-info">(+88) 0172 570051 <br> (+88) 0172 570051</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Contact-popup-->
-
-
     <!--Full Width Sider Start-->
     <div class="full-width-slider">
         <!--Main Header Start-->
-        <header>
-            <!--Topbar area-->
-            <div class="topbar-area style-02">
-                <div class="container">
-                    <div class="row">
-                        <div class="topbar-inner">
-                            <div class="left-content">
-                                Ordered before 17:30, shipped today - Support: (012) 800 456 789
-                            </div>
-                            <div class="right-content">
-                                <div class="social-icon">
-                                    <ul>
-                                        <li><a class="icon" href="#" target="_blank"><i
-                                                    class="fab fa-twitter"></i></a></li>
-                                        <li><a class="icon" href="#"
-                                                target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a class="icon" href="#"
-                                                target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="custom-select-box style-02">
-                                    <select>
-                                        <option value="ban">Ban</option>
-                                        <option value="eng">Eng</option>
-                                        <option value="hindi">Hindi</option>
-                                        <option value="tamil">Tamil</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--// Top Bar Area End-->
-
+        <header class="border-none style-04">
             <div class="container">
                 <div class="row">
-                    <div class="header-bottom-area">
+                    <div class="h4-header-inner">
+                        <div class="humberger-menu-area">
+                            <!-- Humberger -->
+                            <div class="humberger-menu toggle-btn d-block">
+                                <span class="one"></span>
+                                <span class="two"></span>
+                                <span class="three"></span>
+                            </div>
+                            <!--// Humberger -->
+                        </div>
+                        <!--// Humberger -->
+
                         <!--Logo Area Start-->
-                        <div class="logo-area">
-                            <a href="index.html">
-                                <img src="assets/img/logo-02.png" alt="Logo">
-                            </a>
+                        <div class="logo-area-wrap">
+                            <div class="logo-area">
+                                <a href="index.html">
+                                    <img src="assets/img/logo.png" alt="Logo">
+                                </a>
+                            </div>
                         </div>
                         <!--// Logo Area End-->
 
-                        <!--Navbar Area Start Here-->
-                        <nav class="navbar navbar-area navbar-expand-lg style-02">
-                            <div class="container nav-container">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#autoshop_main_menu" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <span class="humberger-menu black">
-                                        <span class="one"></span>
-                                        <span class="two"></span>
-                                        <span class="three"></span>
-                                    </span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="autoshop_main_menu">
-                                    <ul class="navbar-nav">
-                                        <li class="menu-item-has-children current-menu-item">
-                                            <a href="#">Home</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.html">Home 01</a></li>
-                                                <li><a href="index-2.html">Home 02</a></li>
-                                                <li><a href="index-3.html">Home 03</a></li>
-                                                <li><a href="index-4.html">Home 04</a></li>
-                                                <li><a href="index-5.html">Home 05</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">Services</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="service.html">Services</a></li>
-                                                <li><a href="service-details.html">Services Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">Shop</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-02.html">Shop 02</a></li>
-                                                <li><a href="shop-details.html">Shop Details</a></li>
-                                                <li><a href="shop-details-2.html">Shop Details 02</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">Pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li class="menu-item-has-children">
-                                                    <a href="#">UI Elements</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="cart.html">Cart</a></li>
-                                                        <li><a href="typography.html">Typography</a></li>
-                                                        <li><a href="accordions.html">Accordions</a></li>
-                                                        <li><a href="buttons.html">Buttons</a></li>
-                                                        <li><a href="icons.html">Icons</a></li>
-                                                        <li><a href="table.html">Table</a></li>
-                                                        <li><a href="pagination.html">Pagination</a></li>
-                                                        <li><a href="modal.html">Modal</a></li>
-                                                        <li><a href="form.html">Form</a></li>
-                                                        <li><a href="header.html">Header</a></li>
-                                                        <li><a href="footer.html">Footer</a></li>
-                                                        <li><a href="alert.html">Alert</a></li>
-                                                        <li><a href="countdown.html">Countdown</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="car-sell.html">Car Sell</a></li>
-                                                <li><a href="car-repair.html">Car Repair</a></li>
-                                                <li><a href="car-booking.html">Car Booking</a></li>
-                                                <li><a href="faq.html">Faq</a></li>
-                                                <li><a href="coming-soon.html">Coming Soon</a></li>
-                                                <li><a href="404.html">404</a></li>
-                                                <li><a href="sign-in.html">Sign In</a></li>
-                                                <li><a href="sign-up.html">Sign Up</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                        <!--OffCanvas Area Start Here-->
+                        <div id="offcanvas-menu">
+                            <ul class="navbar-nav">
+                                <li class="menu-item-has-children current-menu-item">
+                                    <a href="#">Home</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home 01</a></li>
+                                        <li><a href="index-2.html">Home 02</a></li>
+                                        <li><a href="index-3.html">Home 03</a></li>
+                                        <li><a href="index-4.html">Home 04</a></li>
+                                        <li><a href="index-5.html">Home 05</a></li>
                                     </ul>
-                                </div>
-                                <!--Nav Right Content-->
-                                <div class="nav-right-content black">
-                                    <ul>
-                                        <li class="cart show-cart">
-                                            <a href="#" class="notification">
-                                                <i class="fa fa-shopping-cart"></i>
-                                                <span class="badge">3</span>
-                                            </a>
-                                        </li>
-                                        <li class="search" id="search">
-                                            <i class="fa fa-search"></i>
-                                        </li>
-                                        <li>
-                                            <!-- Humberger -->
-                                            <div class="humberger-menu black toggle-btn">
-                                                <span class="one"></span>
-                                                <span class="two"></span>
-                                                <span class="three"></span>
-                                            </div>
-                                            <!--// Humberger -->
-                                        </li>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Services</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="service.html">Services</a></li>
+                                        <li><a href="service-details.html">Services Details</a></li>
                                     </ul>
-                                </div>
-                                <!--// Nav Right Content-->
-                            </div>
-                        </nav>
-                        <!-- navbar area end -->
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Shop</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="shop.html">Shop</a></li>
+                                        <li><a href="shop-02.html">Shop 02</a></li>
+                                        <li><a href="shop-details.html">Shop Details</a></li>
+                                        <li><a href="shop-details-2.html">Shop Details 02</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Pages</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">UI Elements</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="typography.html">Typography</a></li>
+                                                <li><a href="accordions.html">Accordions</a></li>
+                                                <li><a href="buttons.html">Buttons</a></li>
+                                                <li><a href="icons.html">Icons</a></li>
+                                                <li><a href="table.html">Table</a></li>
+                                                <li><a href="pagination.html">Pagination</a></li>
+                                                <li><a href="modal.html">Modal</a></li>
+                                                <li><a href="form.html">Form</a></li>
+                                                <li><a href="header.html">Header</a></li>
+                                                <li><a href="footer.html">Footer</a></li>
+                                                <li><a href="alert.html">Alert</a></li>
+                                                <li><a href="countdown.html">Countdown</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="car-sell.html">Car Sell</a></li>
+                                        <li><a href="car-repair.html">Car Repair</a></li>
+                                        <li><a href="car-booking.html">Car Booking</a></li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                        <li><a href="coming-soon.html">Coming Soon</a></li>
+                                        <li><a href="404.html">404</a></li>
+                                        <li><a href="sign-in.html">Sign In</a></li>
+                                        <li><a href="sign-up.html">Sign Up</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <!-- // OffCanvas end -->
+
+                        <!--Nav Right Content-->
+                        <div class="nav-right-content">
+                            <ul>
+                                <li class="cart show-cart">
+                                    <a href="#" class="notification">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        <span class="badge">3</span>
+                                    </a>
+                                </li>
+                                <li class="search" id="search">
+                                    <i class="fa fa-search"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--// Nav Right Content-->
                     </div>
-                    <!--// header Bottom-->
                 </div>
             </div>
         </header>
         <!--// Main Header End Here-->
 
         <!--Slider Area Start-->
-        <div class="home-slider-area style-02">
+        <div class="home-slider-area style-04">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="home-slider-one">
+                    <div class="home-slider-four">
                         <!--Slider Items Start-->
-                        <div class="slider-items" style="background-image: url('assets/img/bg/bg-01.png')">
+                        <div class="slider-items overlay-bg"
+                            style="background-image: url(assets/img/slider/h4-slider-01.png)">
                             <div class="container">
                                 <div class="slider-items-wrap">
                                     <div class="slider-inner">
                                         <div class="slider-content">
                                             <div class="slider-content-inner">
-                                                <!--Section Title-->
-                                                <div class="section-title padding-bottom-10">
-                                                    <h6 class="title uppercase black"> Introducing The </h6>
+                                                <div class="auto-typing-header">
+                                                    <h6 class="typewrite" data-text="FIND YOUR DREAM CAR">FIND YOUR
+                                                        DREAM CAR</h6>
                                                 </div>
-                                                <!--// Section Title End-->
-
+                                                <!--// Auto Type End-->
                                                 <div class="slider-title">
-                                                    <h1 class="heading-01">Mercedes-AMG GT <span class="bold">4-Door
-                                                            Coupe</span></h1>
+                                                    <h1 class="heading-01"><span class="bold"> Find Your <br> Perfect
+                                                            Match</span></h1>
                                                 </div>
                                                 <!--// Slider Title End-->
-                                                <div class="slider-paragraph padding-bottom-25 padding-top-20">
-                                                    <p>We all have a dream car some wish for a classy one where as
-                                                        others dream of having a
-                                                        simple old school one. If is often that you may see someone in a
-                                                        car and say</p>
+                                                <div class="slider-paragraph padding-10">
+                                                    <p>Great place to buy a car. As soon as we walked into the show room
+                                                        we were greeted by people that wanted to help.</p>
                                                 </div>
                                                 <!--// Slider Paragraph End-->
-                                                <div class="main-btn-wrap">
-                                                    <a href="#" class="main-btn">order now</a>
-                                                </div>
-                                                <!--// Main Btn Wrap End-->
                                             </div>
                                         </div>
                                         <!--// Slider Content End-->
-                                        <div class="slider-img">
-                                            <img src="assets/img/slider/h2-slider-01.png" alt="img">
+                                        <div class="slider-popup-area">
+                                            <div class="play-area">
+                                                <!-- video popup toggler -->
+                                                <a href="https://www.youtube.com/watch?v=1UF74Clym74"
+                                                    class="hosted-popup">
+                                                    <div class="play-btn style-03">
+                                                        <i class="flaticon-play-button"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <!--// Slider Img-->
+                                        <!--// Slider Popup-->
                                     </div>
                                     <!--// Slider Inner-->
-
-                                    <div class="slider-content-bottom">
-                                        <div class="car-model">
-                                            <div class="items">
-                                                <div class="items__icon"><i class="flaticon-speedometer"></i></div>
-                                                <div class="items__content">
-                                                    <h5 class="heading-05">4.4s</h5>
-                                                    <p>From 0-100kmph</p>
-                                                </div>
-                                            </div>
-                                            <div class="items">
-                                                <div class="items__icon"><i class="flaticon-engine"></i></div>
-                                                <div class="items__content">
-                                                    <h5 class="heading-05">563hp</h5>
-                                                    <p>Engine Power</p>
-                                                </div>
-                                            </div>
-                                            <div class="items">
-                                                <div class="items__icon"><i class="flaticon-fuel-station"></i></div>
-                                                <div class="items__content">
-                                                    <h5 class="heading-05">100.0</h5>
-                                                    <p>Fuel Tank Capacity</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
-                                <!--// Slider Item Wrap-->
+                                <!--// Slider-item Wrap-->
                             </div>
-                            <!--//Container-->
+                            <!--// Container-->
                         </div>
                         <!--// Slider Items End-->
 
                         <!--Slider Items Start-->
-                        <div class="slider-items" style="background-image: url('assets/img/bg/bg-01.png')">
+                        <div class="slider-items overlay-bg"
+                            style="background-image: url(assets/img/slider/h4-slider-02.png)">
                             <div class="container">
                                 <div class="slider-items-wrap">
                                     <div class="slider-inner">
                                         <div class="slider-content">
                                             <div class="slider-content-inner">
-                                                <!--Section Title-->
-                                                <div class="section-title padding-bottom-10">
-                                                    <h6 class="title uppercase black"> Introducing The </h6>
+                                                <div class="auto-typing-header">
+                                                    <h6 class="typewrite" data-text="FIND YOUR DREAM CAR">FIND YOUR
+                                                        DREAM CAR</h6>
                                                 </div>
-                                                <!--// Section Title End-->
-
+                                                <!--// Auto Type End-->
                                                 <div class="slider-title">
-                                                    <h1 class="heading-01">Mercedes-AMG GT <span class="bold">63 s
-                                                            4matic+</span></h1>
+                                                    <h1 class="heading-01"><span class="bold"> Find Your <br> Perfect
+                                                            Match</span></h1>
                                                 </div>
                                                 <!--// Slider Title End-->
-
-                                                <div class="slider-paragraph padding-bottom-25 padding-top-20">
-                                                    <p>We all have a dream car some wish for a classy one where as
-                                                        others dream of having a
-                                                        simple old school one. If is often that you may see someone in a
-                                                        car and say</p>
+                                                <div class="slider-paragraph padding-10 ">
+                                                    <p>Great place to buy a car. As soon as we walked into the show room
+                                                        we were greeted by people that wanted to help.</p>
                                                 </div>
                                                 <!--// Slider Paragraph End-->
-                                                <div class="main-btn-wrap">
-                                                    <a href="#" class="main-btn">order now</a>
-                                                </div>
-                                                <!--// Main Btn Wrap End-->
                                             </div>
                                         </div>
                                         <!--// Slider Content End-->
-                                        <div class="slider-img">
-                                            <img src="assets/img/slider/h2-slider-02.png" alt="img">
+                                        <div class="slider-popup-area">
+                                            <div class="play-area">
+                                                <!-- video popup toggler -->
+                                                <a href="https://www.youtube.com/watch?v=1UF74Clym74"
+                                                    class="hosted-popup">
+                                                    <div class="play-btn style-03">
+                                                        <i class="flaticon-play-button"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <!--// Slider Img-->
+                                        <!--// Slider Popup-->
                                     </div>
                                     <!--// Slider Inner-->
-
-                                    <div class="slider-content-bottom">
-                                        <div class="car-model">
-                                            <div class="items">
-                                                <div class="items__icon"><i class="flaticon-speedometer"></i></div>
-                                                <div class="items__content">
-                                                    <h5 class="heading-05">4.4s</h5>
-                                                    <p>From 0-100kmph</p>
-                                                </div>
-                                            </div>
-                                            <div class="items">
-                                                <div class="items__icon"><i class="flaticon-engine"></i></div>
-                                                <div class="items__content">
-                                                    <h5 class="heading-05">560hp</h5>
-                                                    <p>Engine Power</p>
-                                                </div>
-                                            </div>
-                                            <div class="items">
-                                                <div class="items__icon"><i class="flaticon-fuel-station"></i></div>
-                                                <div class="items__content">
-                                                    <h5 class="heading-05">1005.0</h5>
-                                                    <p>Fuel Tank Capacity</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
-                                <!--// Slider Item Wrap-->
+                                <!--// Slider-item Wrap-->
                             </div>
-                            <!--//Container-->
+                            <!--// Container-->
                         </div>
                         <!--// Slider Items End-->
 
                         <!--Slider Items Start-->
-                        <div class="slider-items" style="background-image: url('assets/img/bg/bg-01.png')">
+                        <div class="slider-items overlay-bg"
+                            style="background-image: url(assets/img/slider/h4-slider-03.png)">
                             <div class="container">
                                 <div class="slider-items-wrap">
                                     <div class="slider-inner">
                                         <div class="slider-content">
                                             <div class="slider-content-inner">
-                                                <!--Section Title-->
-                                                <div class="section-title padding-bottom-10">
-                                                    <h6 class="title uppercase black"> Introducing The </h6>
+                                                <div class="auto-typing-header">
+                                                    <h6 class="typewrite" data-text="FIND YOUR DREAM CAR">FIND YOUR
+                                                        DREAM CAR</h6>
                                                 </div>
-                                                <!--// Section Title End-->
-
+                                                <!--// Auto Type End-->
                                                 <div class="slider-title">
-                                                    <h1 class="heading-01">Mercedes-AMG GT <span class="bold">r
-                                                            roadster</span></h1>
+                                                    <h1 class="heading-01"><span class="bold"> Find Your <br> Perfect
+                                                            Match</span></h1>
                                                 </div>
                                                 <!--// Slider Title End-->
-
-                                                <div class="slider-paragraph padding-bottom-25 padding-top-20">
-                                                    <p>We all have a dream car some wish for a classy one where as
-                                                        others dream of having a
-                                                        simple old school one. If is often that you may see someone in a
-                                                        car and say</p>
+                                                <div class="slider-paragraph padding-10 ">
+                                                    <p>Great place to buy a car. As soon as we walked into the show room
+                                                        we were greeted by people that wanted to help.</p>
                                                 </div>
                                                 <!--// Slider Paragraph End-->
-                                                <div class="main-btn-wrap">
-                                                    <a href="#" class="main-btn">order now</a>
-                                                </div>
-                                                <!--// Main Btn Wrap End-->
                                             </div>
                                         </div>
                                         <!--// Slider Content End-->
-                                        <div class="slider-img">
-                                            <img src="assets/img/slider/h2-slider-03.png" alt="img">
+                                        <div class="slider-popup-area">
+                                            <div class="play-area">
+                                                <!-- video popup toggler -->
+                                                <a href="https://www.youtube.com/watch?v=1UF74Clym74"
+                                                    class="hosted-popup">
+                                                    <div class="play-btn style-03">
+                                                        <i class="flaticon-play-button"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <!--// Slider Img-->
+                                        <!--// Slider Popup-->
                                     </div>
                                     <!--// Slider Inner-->
-
-                                    <div class="slider-content-bottom">
-                                        <div class="car-model">
-                                            <div class="items">
-                                                <div class="items__icon"><i class="flaticon-speedometer"></i></div>
-                                                <div class="items__content">
-                                                    <h5 class="heading-05">4.4s</h5>
-                                                    <p>From 0-100kmph</p>
-                                                </div>
-                                            </div>
-                                            <div class="items">
-                                                <div class="items__icon"><i class="flaticon-engine"></i></div>
-                                                <div class="items__content">
-                                                    <h5 class="heading-05">566hp</h5>
-                                                    <p>Engine Power</p>
-                                                </div>
-                                            </div>
-                                            <div class="items">
-                                                <div class="items__icon"><i class="flaticon-fuel-station"></i></div>
-                                                <div class="items__content">
-                                                    <h5 class="heading-05">100.0</h5>
-                                                    <p>Fuel Tank Capacity</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
-                                <!--// Slider Item Wrap-->
+                                <!--// Slider-item Wrap-->
                             </div>
-                            <!--//Container-->
+                            <!--// Container-->
                         </div>
                         <!--// Slider Items End-->
 
                         <!--Slider Items Start-->
-                        <div class="slider-items" style="background-image: url('assets/img/bg/bg-01.png')">
+                        <div class="slider-items overlay-bg"
+                            style="background-image: url(assets/img/slider/h4-slider-04.png)">
                             <div class="container">
                                 <div class="slider-items-wrap">
                                     <div class="slider-inner">
                                         <div class="slider-content">
                                             <div class="slider-content-inner">
-                                                <!--Section Title-->
-                                                <div class="section-title padding-bottom-10">
-                                                    <h6 class="title uppercase black"> Introducing The </h6>
+                                                <div class="auto-typing-header">
+                                                    <h6 class="typewrite" data-text="FIND YOUR DREAM CAR">FIND YOUR
+                                                        DREAM CAR</h6>
                                                 </div>
-                                                <!--// Section Title End-->
-
+                                                <!--// Auto Type End-->
                                                 <div class="slider-title">
-                                                    <h1 class="heading-01">Mercedes-AMG GT <span class="bold">c
-                                                            roadster</span></h1>
+                                                    <h1 class="heading-01"><span class="bold"> Find Your <br> Perfect
+                                                            Match</span></h1>
                                                 </div>
                                                 <!--// Slider Title End-->
-
-                                                <div class="slider-paragraph padding-bottom-25 padding-top-20">
-                                                    <p>We all have a dream car some wish for a classy one where as
-                                                        others dream of having a
-                                                        simple old school one. If is often that you may see someone in a
-                                                        car and say</p>
+                                                <div class="slider-paragraph padding-10 ">
+                                                    <p>Great place to buy a car. As soon as we walked into the show room
+                                                        we were greeted by people that wanted to help.</p>
                                                 </div>
                                                 <!--// Slider Paragraph End-->
-                                                <div class="main-btn-wrap">
-                                                    <a href="#" class="main-btn">order now</a>
-                                                </div>
-                                                <!--// Main Btn Wrap End-->
                                             </div>
                                         </div>
                                         <!--// Slider Content End-->
-                                        <div class="slider-img">
-                                            <img src="assets/img/slider/h2-slider-02.png" alt="img">
+                                        <div class="slider-popup-area">
+                                            <div class="play-area">
+                                                <!-- video popup toggler -->
+                                                <a href="https://www.youtube.com/watch?v=1UF74Clym74"
+                                                    class="hosted-popup">
+                                                    <div class="play-btn style-03">
+                                                        <i class="flaticon-play-button"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <!--// Slider Img-->
+                                        <!--// Slider Popup-->
                                     </div>
                                     <!--// Slider Inner-->
-
-                                    <div class="slider-content-bottom">
-                                        <div class="car-model">
-                                            <div class="items">
-                                                <div class="items__icon"><i class="flaticon-speedometer"></i></div>
-                                                <div class="items__content">
-                                                    <h5 class="heading-05">5.4s</h5>
-                                                    <p>From 0-100kmph</p>
-                                                </div>
-                                            </div>
-                                            <div class="items">
-                                                <div class="items__icon"><i class="flaticon-engine"></i></div>
-                                                <div class="items__content">
-                                                    <h5 class="heading-05">560hp</h5>
-                                                    <p>Engine Power</p>
-                                                </div>
-                                            </div>
-                                            <div class="items">
-                                                <div class="items__icon"><i class="flaticon-fuel-station"></i></div>
-                                                <div class="items__content">
-                                                    <h5 class="heading-05">105.0</h5>
-                                                    <p>Fuel Tank Capacity</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
-                                <!--// Slider Item Wrap-->
+                                <!--// Slider-item Wrap-->
                             </div>
-                            <!--//Container-->
+                            <!--// Container-->
                         </div>
                         <!--// Slider Items End-->
+
                     </div>
-                    <!--// Home 02 Slider Active-->
-                    <div class="home-slider-area__bottom-area"
-                        style="background-image: url('assets/img/bg/bg-03.png');">
+                    <!--// Slider Active Class-->
+
+                    <div class="slider-social-icon-wrap">
+                        <div class="slider-social-icon">
+                            <ul>
+                                <li><a class="icon" href="#" target="_blank"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="icon" href="#" target="_blank"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li><a class="icon" href="#" target="_blank"><i
+                                            class="fab fa-instagram"></i></a></li>
+                                <li><a class="icon" href="#/about"
+                                        target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="follow-us-area">
+                            <div class="follow-us">FOLLOW US</div>
+                        </div>
+                    </div>
+                    <!--// slider social icon-->
+
+                    <!--Slider Bottom Area -->
+                    <div class="home-slider-area__bottom-area">
                         <div class="container px-lg-0">
                             <div class="slider-bottom-inner">
 
+                                <div class="slider-progress-area">
+                                    <div class="h4-slider-dots"></div>
+                                    <div class="slider-progress-inner">
+                                        <div class="progress-full-line">
+                                            <div class="progress-active-line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// Slider Progress-->
+                                <div class="slider-arrow-area">
+                                    <div class="h4-carousel-dots"></div>
+                                </div>
+                                <!--// Slider Arrow-->
+                                <div class="slider-booking-area">
+                                    <div class="slider-booking-inner">
+                                        <div class="title-area">
+                                            <h6 class="heading-06">BOOKING A CAR</h6>
+                                            <h4 class="heading-04">Get Registered</h4>
+                                        </div>
+                                        <div class="icon">
+                                            <a href="#">
+                                                <i class="flaticon-right-arrow"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// Slider Booking -->
+
                             </div>
+                            <!--// Slider Bottom Inner-->
                         </div>
+                        <!--// Slider Bottom Container-->
                     </div>
+                    <!--// Slider Bottom Area End-->
                 </div>
                 <!--// Slider Row End-->
             </div>
-
-            <!--Carouse Dots Area-->
-            <div class="carousel-dots-area">
-                <div class="container">
-                    <div class="carousel-dots">
-                    </div>
-                </div>
-            </div>
-            <!--// Carouse Dots Area End-->
         </div>
         <!--//Slider Area End-->
+
     </div>
     <!--// Full Width Sider End-->
 
 
-    <!--Tab Section-->
-    <div class="home-02_tab-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="tab-wrapper">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab">All car
-                                    types</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="new-car" data-toggle="tab" href="#newcar" role="tab">New car</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="use-car" data-toggle="tab" href="#usecar" role="tab">Usde
-                                    car</a>
-                            </li>
-                        </ul>
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-                                <div class="select-box-wrap">
-                                    <div class="items">
-                                        <div class="custom-select-box">
-                                            <select>
-                                                <option selected> SELECT MAKE </option>
-                                                <option>Rolls royce</option>
-                                                <option>Rolls royce</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!--// Items-->
-                                    <div class="items">
-                                        <div class="custom-select-box">
-                                            <select>
-                                                <option selected> SELECT MODEL </option>
-                                                <option>Pantom</option>
-                                                <option>Pantom</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!--// Items-->
-                                    <div class="items">
-                                        <div class="main-btn-wrap text-center">
-                                            <a href="#" class="main-btn uppercase">FIND CAR</a>
-                                        </div>
-                                    </div>
-                                    <!--// Items-->
-                                </div>
-                                <!--// Select Box Wrap-->
-                            </div>
-                            <div class="tab-pane fade" id="newcar" role="tabpanel" aria-labelledby="new-car">
-                                <div class="select-box-wrap">
-                                    <div class="items">
-                                        <div class="custom-select-box">
-                                            <select>
-                                                <option selected> SELECT MAKE </option>
-                                                <option>New Rolls royce</option>
-                                                <option>New Rolls royce</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!--// Items-->
-                                    <div class="items">
-                                        <div class="custom-select-box">
-                                            <select>
-                                                <option selected> SELECT MODEL </option>
-                                                <option>Pantom</option>
-                                                <option>Pantom</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!--// Items-->
-                                    <div class="items">
-                                        <div class="main-btn-wrap text-center">
-                                            <a href="#" class="main-btn uppercase">FIND CAR</a>
-                                        </div>
-                                    </div>
-                                    <!--// Items-->
-                                </div>
-                                <!--// Select Box Wrap-->
-                            </div>
-                            <div class="tab-pane fade" id="usecar" role="tabpanel" aria-labelledby="use-car">
-                                <div class="select-box-wrap">
-                                    <div class="items">
-                                        <div class="custom-select-box">
-                                            <select>
-                                                <option selected> SELECT MAKE </option>
-                                                <option>Use Rolls royce</option>
-                                                <option>Use Rolls royce</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!--// Items-->
-                                    <div class="items">
-                                        <div class="custom-select-box">
-                                            <select>
-                                                <option selected> SELECT MODEL </option>
-                                                <option>Pantom</option>
-                                                <option>Pantom</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!--// Items-->
-                                    <div class="items">
-                                        <div class="main-btn-wrap text-center">
-                                            <a href="#" class="main-btn uppercase">FIND CAR</a>
-                                        </div>
-                                    </div>
-                                    <!--// Items-->
-                                </div>
-                                <!--// Select Box Wrap-->
-                            </div>
-                        </div>
-                    </div>
-                    <!--// Tab Wrapper-->
-                </div>
-            </div>
-            <!--// Row-->
-        </div>
-        <!--// Container-->
-    </div>
-    <!--// Tab Section-->
-
 
     <!--How We Are Section Start-->
-    <section class="how-we-are padding-top-120 padding-bottom-110">
+    <section class="how-we-are padding-top-40 padding-bottom-110">
 
         <!-- Side form icons -->
         <div id="service_info_item" class="side-form-icons">
@@ -2116,11 +1835,9 @@
     </section>
     <!--//Our Latest New Section End-->
 
-
-
     <!-- footer area start -->
     <footer class="footer-area style-02" style="background-image: url('assets/img/bg/footer-bg.png')">
-        <div class="footer-top ">
+        <div class="footer-top">
             <div class="container">
                 <div class="row">
                     <div class="footer-subscribe-area">
@@ -2140,7 +1857,7 @@
                     </div>
                 </div>
 
-                <div class="row padding-top-125 padding-bottom-45">
+                <div class="row padding-top-120 padding-bottom-40">
                     <div class="col-lg-4 col-md-6 px-lg-0">
                         <div class="footer-widget widget">
                             <div class="about_us_widget">
@@ -2242,8 +1959,6 @@
     <script src="assets/js/jquery-migrate.min.js"></script>
     <!-- bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <!--Mean Menu-->
-    <script src="assets/js/jquery.meanmenu.min.js"></script>
     <!-- waypoint -->
     <script src="assets/js/waypoints.min.js"></script>
     <!-- wow -->
@@ -2256,6 +1971,8 @@
     <script src="assets/js/jquery.rPopup.js"></script>
     <!--Nice Select-->
     <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--Mean Menu-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
     <!-- imageloaded -->
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <!--Google Map API-->
